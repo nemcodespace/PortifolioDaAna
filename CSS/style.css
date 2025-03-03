@@ -1,1 +1,142 @@
-aanna
+* {
+    box-sizing: border-box;
+}
+html {
+    font: 62.5%;
+}
+body {
+    font-family: "arial", helvetica, sans-serif;
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+.container {
+    width: 100%;
+    max-width: 1020px;
+    height: 700px;
+    position: relative;
+}
+.container > img {
+    object-fit: cover;
+    object-position: center center;
+    width: 100%;
+    height: 100%;
+    filter: blur(25px);
+}
+.container-dentro {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    bottom: 10px;
+    right: 10px;
+    outline: 100px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 5rem;
+}
+.container-dentro img {
+    width: 300px;
+    height: 300px;
+    box-shadow: 2px 2px 15px black;
+    border-radius: 50%;
+}
+.hero-text {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-direction: column;
+    flex-grow: 1;
+    color: white;
+    padding: 1em;
+}
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.hero-text h1 {
+    margin: 0;
+    letter-spacing: 2px;
+    
+}
+.hero-text p {
+    margin-top: 0;
+    margin-bottom: 4rem;
+    color: #9b9b9b;
+}
+.hero-text h1 ~ a {
+    border: 2px solid white;
+    width: 300px;
+    margin: 1rem 0;
+    padding: 0.5rem;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 0.4em;
+}
+.hero-text h1 ~ a:hover {
+    background: rgba(0,0,0,0.4);
+    cursor: pointer;
+}
+.img-redes img {
+    object-fit: cover;
+    object-position: center top;
+}
+.redes-sociais {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    margin: 2rem 0 0 0;
+}
+.fa-instagram {
+    font-size: 2rem;
+    color: white;
+}
+.fa-facebook {
+    font-size: 2rem;
+    color: white;
+}
+.fa-twitter {
+    font-size: 2rem;
+    color: white;
+}
+.img-redes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 1em;
+}
+
+/* responsivo */
+
+@media only screen and (max-width: 700px){
+    
+    .container-dentro {
+        display: block;
+        padding: 1rem;
+    }
+    .img-redes {
+        width: 100%;
+    }
+    .hero-text {
+        width: 100%;
+        display: block;
+        
+    }
+    .container {
+        height: 1000px;
+        margin-top: 14rem;
+    }
+    
+    
+    
+}
+
